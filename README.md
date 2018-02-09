@@ -7,7 +7,7 @@ Here’s the app we'll build:
 
 ![alt text][logo1]
 
-[logo1]: http://iosbrain.com/wp-content/uploads/2018/02/SwiftDelegation.gif "App demonstrating notifications"
+[logo1]: http://iosbrain.com/wp-content/uploads/2018/02/NSNotificationCenter.gif "App demonstrating notifications"
 
 ## Xcode 9 project settings
 **To get this project running on the Simulator or a physical device (iPhone, iPad)**, go to the following locations in Xcode and make the suggested changes:
