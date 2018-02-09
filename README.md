@@ -1,7 +1,7 @@
 # NSNotificationCenter-Demo
 NSNotificationCenter in Swift 4: Intra-app communication, sending, receiving, listening, stop listening for messages.
 
-This is pretty basic folks -- but still very important. In terms of communication and coordination between objects in your app, and age-old debate is whether to use delegation or messaging/notifications. I'll let you think about it.
+This is pretty basic folks -- but still very important. In terms of communication and coordination between objects in your app, an age-old debate is whether to use delegation or messaging/notifications. I'll let you think about it.
 
 Here’s the app we'll build:
 
