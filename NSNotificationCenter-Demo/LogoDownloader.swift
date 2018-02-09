@@ -35,19 +35,16 @@ import Foundation
 
 import UIKit
 
-// STEP 1: Define a unique string to identify the purpose of a notification.
-// I use my reverse domain name because I know it will be unique
-// and won't clash with any iOS-based notifications.
-let notificationID =
+// STEP 1: Define unique strings to identify the purpose of
+// all this app's notifications. I've defined these as global
+// because constants are often sent to various locations
+// throughout an app. I use my reverse domain name because
+// I know it will be unique and won't clash with any
+// iOS-based notifications.
+let logoDownloadNotificationID =
     "com.iosbrain.logoDownloadCompletedNotificationID"
-
-// STEP 2: I define this extension to make referencing the
-// notification ID less verbose in code.
-extension Notification.Name
-{
-    static let logoDownloadCompleted =
-        Notification.Name(rawValue: notificationID)
-}
+let welcomeReadyNotificationID =
+    "com.iosbrain.welcomeReadyNotificationID"
 
 class LogoDownloader
 {
@@ -89,15 +86,13 @@ class LogoDownloader
         } // end DispatchQueue.global
     }
     
-    /**
-     STEP 4: When the image finishes downloading, this method is
-     called and it "posts" (sends) a "notification"
-     (message) to anyone who's "observing" (listening). Note
-     that this class, "object: self," is posting the notification.
-    */
+    // STEP 3.1: When the image finishes downloading, this method is
+    // called and it "posts" (sends) a "notification"
+    // (message) to anyone who's "observing" (listening). Note below
+    // that this class ("object: self") is posting the notification.
     func didDownloadImage()
     {
-        NotificationCenter.default.post(name: .logoDownloadCompleted, object: self)
+        NotificationCenter.default.post(name: Notification.Name(rawValue: logoDownloadNotificationID), object: self)
     }
     
 } // end class LogoDownloader
