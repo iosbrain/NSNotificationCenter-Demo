@@ -37,9 +37,6 @@ import UIKit
 // in the storyboard corresponding to this ViewController
 // for "View as: iPhone SE."
 
-//
-// This is the DELEGATE
-//
 class ViewController: UIViewController
 {
     
