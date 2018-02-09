@@ -38,7 +38,7 @@ import UIKit
 // STEP 1: Define a unique string to identify the purpose of a notification.
 // I use my reverse domain name because I know it will be unique
 // and won't clash with any iOS-based notifications.
-let mySpecialNotificationKey =
+let notificationID =
     "com.iosbrain.logoDownloadCompletedNotificationID"
 
 // STEP 2: I define this extension to make referencing the
@@ -46,7 +46,7 @@ let mySpecialNotificationKey =
 extension Notification.Name
 {
     static let logoDownloadCompleted =
-        Notification.Name(rawValue: "logoDownloadCompleted")
+        Notification.Name(rawValue: notificationID)
 }
 
 class LogoDownloader
