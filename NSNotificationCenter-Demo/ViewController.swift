@@ -181,7 +181,7 @@ class ViewController: UIViewController
         }
     } // end func didFinishDownloading
     
-    // STEP 3.2: When the can click the "Login" button, and does so,
+    // STEP 3.2: When we can click the "Login" button, and do so,
     // this method is called and it BROADCASTS -- "posts" (sends) --
     // a "notification" (message) to anyone who's "observing" (listening).
     // Note below that this class ("object: self") is posting the notification.

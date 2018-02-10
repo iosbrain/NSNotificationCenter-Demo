@@ -37,7 +37,7 @@ import UIKit
 
 // STEP 1: Define unique strings to identify the purpose of
 // all this app's notifications. I've defined these as global
-// because constants are often sent to various locations
+// constants because messages are often sent to various locations
 // throughout an app. I use my reverse domain name because
 // I know it will be unique and won't clash with any
 // iOS-based notifications.
